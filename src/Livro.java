@@ -8,9 +8,16 @@ public class Livro {
         public double valor;
 
         public String editora;
-        public int Paginas;
+        public int paginas;
 
         public String resumo;
 
         public String tipoCapa;
+
+        public String retornarDados(){
+            String tituloF = this.titulo;
+            tituloF = "Caraval";
+            return tituloF;
+
+        }
 }
