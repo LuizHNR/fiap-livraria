@@ -21,12 +21,8 @@ public class CriarLivros {
         meuLivro.titulo = "UML 2.0";
         meuLivro.valor = 50.99;
 
-        System.out.println(favorito.retornarDados());
+        System.out.println(meuLivro.retornarDados());
 
-        Livro favorito2 = new Livro();
-        System.out.println("Digite o titulo do livro: ");
-        favorito2.titulo = leitor.nextLine();
 
-        System.out.println("Seu livro favorito é: " + favorito2.titulo);
     }
 }

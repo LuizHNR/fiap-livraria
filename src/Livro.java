@@ -15,8 +15,11 @@ public class Livro {
         public String tipoCapa;
 
         public String retornarDados(){
-            String tituloF = this.titulo;
-            tituloF = "Caraval";
+            String tituloF = "--------------------" +
+                            "\nTitulo: " + this.titulo +
+                            "\nResumo: " + this.resumo +
+                            "\nPreço: R$ " + this.valor +
+                            "\nPáginas: " + this.paginas;
             return tituloF;
 
         }
