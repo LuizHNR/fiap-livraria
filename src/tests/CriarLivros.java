@@ -6,9 +6,11 @@ import models.LivroFisico;
 import models.RegistroVendas;
 import models.enums.TipoCapaEnum;
 
+import java.io.IOException;
+
 //Classe de execução => main
 public class CriarLivros {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         //Instanciando um objeto => criar o objeto na memória
         // tipoObjeto nomeObjeto = operadorInstanciação  construtor;
         //   models.Livro      favorito =       new               models.Livro();
@@ -45,6 +47,8 @@ public class CriarLivros {
         carrinho.adicionar(favorito);
         carrinho.adicionar(meuLivro);
         carrinho.adicionar(livroDigital);
+        String path = "D:\\1TDSPM\\LuizH\\java\\fiap-livraria\\Cupom.txt";
+        carrinho.ImprimirCupom(path);
 
     }
 }

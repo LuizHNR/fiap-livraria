@@ -2,7 +2,7 @@ package models;
 
 import models.Editora;
 
-public abstract class Livro {
+public abstract class Livro implements Exemplar{
 
     //---ATRIBUTOS ---///
     //+ (public) TipoDado nomeAtributoOuVariavel
@@ -17,13 +17,13 @@ public abstract class Livro {
     public String exibirDados(){
         String dados =
                 "---------------" +
-                "\nTitulo: " + this.titulo +
-                "\nResumo: " + this.resumo +
-                "\nPreço: R$ " + this.valor +
-                "\nPáginas: " + this.paginas +
-                "\nAutor: " + this.autor +
-                "\nmodels.Editora:" + this.editora.nome +
-                "\n---------------" ;               ;
+                        "\nTitulo: " + this.titulo +
+                        "\nResumo: " + this.resumo +
+                        "\nPreço: R$ " + this.valor +
+                        "\nPáginas: " + this.paginas +
+                        "\nAutor: " + this.autor +
+                        "\nmodels.Editora:" + this.editora.nome +
+                        "\n---------------" ;               ;
         return dados;
     }
 

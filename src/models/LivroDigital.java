@@ -18,15 +18,21 @@ public class LivroDigital extends Livro {
     public LivroDigital(String titulo, String autor,
                         double valor, Editora editora,
                         int paginas, String resumo,
-                         String marcaDagua) {
+                        String marcaDagua) {
         super(titulo, autor, valor, editora, paginas, resumo);
         this.marcaDagua = marcaDagua;
     }
+
+    @Override
+    public double getPreco() {
+        return super.valor;
+    }
+
     @Override
     public String exibirDados(){
-       return super.exibirDados() +
-                        "\nMarca D'Agua:" + this.marcaDagua +
-                        "\n---------------" ;
+        return super.exibirDados() +
+                "\nMarca D'Agua:" + this.marcaDagua +
+                "\n---------------" ;
     }
     @Override
     public double aplicarDesconto(){
